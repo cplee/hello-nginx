@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo ${CODEBUILD_RESOLVED_SOURCE_VERSION} > health
+
+artifacts:
+  files:
+    - '**/*'
+
