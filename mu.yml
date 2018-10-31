@@ -1,13 +1,8 @@
-environments:
-- name: acceptance
-  provider: ecs-fargate
-- name: production
-  provider: ecs-fargate
-
 service:
   port: 80
   pathPatterns:
   - /*
   pipeline:
-    notify:
-    - casey.lee@stelligent.com
+    catalog:
+      name: basic-pipeline
+      version: v2
