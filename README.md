@@ -9,7 +9,6 @@ curl -s https://getmu.io/install.sh | sh
 ```
 
 # Create the pipeline
-This uses ECS Fargate, so be sure to run in us-east-1
 ```
 mu pipeline up
 ```
