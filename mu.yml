@@ -1,13 +1,10 @@
 environments:
 - name: acceptance
-  provider: ecs-fargate
+  provider: eks
 - name: production
-  provider: ecs-fargate
+  provider: eks
 
 service:
   port: 80
   pathPatterns:
   - /*
-  pipeline:
-    notify:
-    - casey.lee@stelligent.com
