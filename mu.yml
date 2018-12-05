@@ -8,3 +8,10 @@ service:
   port: 80
   pathPatterns:
   - /*
+
+
+## Configure EKS RBAC 
+rbac:
+- role: admin
+  users:
+  - casey.lee
